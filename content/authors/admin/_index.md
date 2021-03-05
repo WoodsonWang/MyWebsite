@@ -17,23 +17,21 @@ organizations:
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 # Interests to show in About widget
-兴趣:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+interests:
+- Python爬虫
+- 深度学习
+
 
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: 计算机技术 硕士
+    institution: 中国农业大学
+    year: 2019-至今
+  - course: 计算机科学与技术 本科
+    institution: 鲁东大学
+    year: 2015-2019
+  
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
