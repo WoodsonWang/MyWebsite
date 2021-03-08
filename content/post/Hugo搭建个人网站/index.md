@@ -37,12 +37,8 @@ projects: []
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-<!-- 使用valine实现的访客数量 -->
- <p class="copyright-item">
- <span id="{{ . | relURL}}" class="leancloud-visitors" data-flag-title="Chrome">
- <span>Read:</span>
- 本文累计阅读<i class="leancloud-visitors-count"></i>次
- </p>
+
+
 {{< toc summary="目录">}}
 
  
@@ -104,6 +100,33 @@ projects: []
 进入[Netlify网站](https://app.netlify.com/)的个人网页管理界面，在Recent form submissions管理模块中。
 
 ![image-20210308163453509](image-20210308163453509.png)
+
+
+
+## 添加浏览次数
+
+使用[不蒜子](https://busuanzi.ibruce.info/)
+
+直接将下面的html代码写入markdown中。
+
+```html
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+```
+
+## 添加百度统计
+
+​		对访问量进行跟踪，该模板内嵌了对[百度统计](https://tongji.baidu.com/)的支持。
+
+​		编辑`\MyWebsite\config\_default\params.yaml`中的baidu_tongji字段，将百度统计的ID添加到里面，就可以在百度统计网站查看我们个人主页的访问量了。
+
+❤️  百度统计ID获取.
+
+![image-20210309004538240](image-20210309004538240.png)
+
+😄编辑配置文件.
+
+![image-20210309004158785](image-20210309004158785.png)
 
 ## 参考
 
