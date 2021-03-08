@@ -54,6 +54,16 @@ projects: []
 
    ![image-20210308160143617](image-20210308160143617.png)
 
+
+
+
+
+{{% callout note %}} 
+
+网站更新到Github之后，Netlify会重新部署，可以在[Netlify网站](https://app.netlify.com/)上查看部署日志信息，如果部署出错也会有提示。
+
+ {{% /callout %}}
+
 ## 参考
 
 - [网站设置及博客编写教程](https://wowchemy.com/docs/)
