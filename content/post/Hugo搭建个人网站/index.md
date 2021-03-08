@@ -30,10 +30,19 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
+
+
 ---
 
 
-
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+<!-- 使用valine实现的访客数量 -->
+ <p class="copyright-item">
+ <span id="{{ . | relURL}}" class="leancloud-visitors" data-flag-title="Chrome">
+ <span>Read:</span>
+ 本文累计阅读<i class="leancloud-visitors-count"></i>次
+ </p>
 {{< toc summary="目录">}}
 
  
@@ -63,6 +72,38 @@ projects: []
 网站更新到Github之后，Netlify会重新部署，可以在[Netlify网站](https://app.netlify.com/)上查看部署日志信息，如果部署出错也会有提示。
 
  {{% /callout %}}
+
+## 本地查看
+
+将Github上的网站Clone到本地之后，可以在本地离线进行网页浏览。
+
+### 查看方法
+
+1. 本地安装Hugo，[点我查看如何安装？](https://gohugo.io/getting-started/installing/)
+
+2. 进入网站文件夹，在命令行中使用如下命令，即可出现本地访问链接。
+
+   ```cmd
+   hugo server
+   ```
+
+   ![image-20210308162425518](image-20210308162425518.png)
+
+## 编写文章
+
+使用如下命令，创建一篇博客。
+
+```cmd
+ hugo new --kind post post/Hugo搭建个人网站
+```
+
+会自动在content/post 文件夹中生成一个md文件，使用Markdown编辑器进行文章编辑即可。
+
+## 网站评论的查看
+
+进入[Netlify网站](https://app.netlify.com/)的个人网页管理界面，在Recent form submissions管理模块中。
+
+![image-20210308163453509](image-20210308163453509.png)
 
 ## 参考
 
