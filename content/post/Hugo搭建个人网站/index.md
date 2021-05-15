@@ -89,6 +89,8 @@ projects: []
 
 使用如下命令，创建一篇博客。
 
+下面的命令要在网站的根目录下使用。
+
 ```cmd
  hugo new --kind post post/Hugo搭建个人网站
 ```

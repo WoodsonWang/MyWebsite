@@ -50,12 +50,66 @@ pip install tifffile
 
 ```python
 import tifffile
+
 img = tifffile.imread(file)
 ```
 
-### 写文件
+### 写入
 
 ```python
 imwrite('temp.tif', data)
+```
+
+## libtiff
+
+### 写入
+
+```python
+from libtiff import TIFF
+
+tif = TIFF.open(path, 'w')
+tif.write_image(image)
+```
+
+## CV2
+
+### 保存文件
+
+```python
+import cv2
+
+cv2.imwrite('result_label_cv2.tif',img_arr)
+```
+
+### 读取文件
+
+```python
+img = cv2.imread ('C:/Users/Administrator/Pictures/test1.jpg')
+```
+
+
+
+## numpy
+
+### 矩阵合并
+
+一维矩阵合并
+
+```python
+a = np.array([1,2,3,4,5,5])
+c = np.array([2,3,4,54,5])
+d = np.concatenate((a,c))
+print(d)
+
+[ 1  2  3  4  5  5  2  3  4 54  5]
+```
+
+### 改变矩阵形状
+
+展成一维
+
+```python
+img1_pred = cv2.imread(f1_pred)
+img1_pred = img1_pred.flatten()
 ```
 
